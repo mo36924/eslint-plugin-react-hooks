@@ -24,8 +24,8 @@ function isHook(node) {
 function _isHook
 `;
 
-const isInsideComponentOrHook = `
-function isInsideComponentOrHook(node) {
+const isMemoCallback = `
+function isMemoCallback(node) {
   if (
     (node.type === "FunctionExpression" || node.type === "ArrowFunctionExpression") &&
     node.parent &&
@@ -33,15 +33,15 @@ function isInsideComponentOrHook(node) {
   ) {
     return true;
   }
-  return _isInsideComponentOrHook(node);
+  return _isMemoCallback(node);
 }
-function _isInsideComponentOrHook
+function _isMemoCallback
 `;
 
 const patchedCode = code
   .replace(/\bprocess\.env\.NODE_ENV\b/g, '"development"')
   .replace("function isHook", isHook)
-  .replace("function isInsideComponentOrHook", isInsideComponentOrHook);
+  .replace("function isMemoCallback", isMemoCallback);
 
 const module = { exports: {} };
 
