@@ -1,0 +1,65 @@
+{
+  "name": "@mo36924/eslint-plugin-react-hooks",
+  "type": "module",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "ESLint rules for React Hooks",
+  "author": "mo36924",
+  "license": "MIT",
+  "homepage": "https://github.com/mo36924/eslint-plugin-react-hooks#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo36924/eslint-plugin-react-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mo36924/eslint-plugin-react-hooks/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "react"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pkgroll",
+    "fix": "run-s fix:*",
+    "fix:eslint": "eslint --fix .",
+    "fix:prettier": "prettier --write .",
+    "lint": "run-s lint:*",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "lint:typescript": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-react-hooks-v5": "npm:eslint-plugin-react-hooks@5.1.0-rc-4f604941-20240830"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "3.0.0",
+    "@types/node": "20.16.3",
+    "eslint": "9.9.1",
+    "eslint-plugin-react-hooks-v5": "npm:eslint-plugin-react-hooks@5.1.0-rc-4f604941-20240830",
+    "npm-run-all2": "6.2.2",
+    "pkgroll": "2.4.2",
+    "prettier": "3.3.3",
+    "tsx": "4.19.0",
+    "typescript": "5.5.4"
+  }
+}
