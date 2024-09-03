@@ -50,13 +50,13 @@
     "eslint": "^9.0.0"
   },
   "dependencies": {
-    "eslint-plugin-react-hooks-v5": "npm:eslint-plugin-react-hooks@5.1.0-rc-4f604941-20240830"
+    "@mo36924/eslint-plugin-react-hooks-v5": "npm:eslint-plugin-react-hooks@5.1.0-rc-4f604941-20240830"
   },
   "devDependencies": {
     "@antfu/eslint-config": "3.0.0",
+    "@mo36924/eslint-plugin-react-hooks-v5": "npm:eslint-plugin-react-hooks@5.1.0-rc-4f604941-20240830",
     "@types/node": "20.16.3",
     "eslint": "9.9.1",
-    "eslint-plugin-react-hooks-v5": "npm:eslint-plugin-react-hooks@5.1.0-rc-4f604941-20240830",
     "npm-run-all2": "6.2.2",
     "pkgroll": "2.4.2",
     "prettier": "3.3.3",

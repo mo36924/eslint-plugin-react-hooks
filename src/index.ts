@@ -6,7 +6,7 @@ import type { ESLint } from "eslint";
 const require = createRequire(import.meta.url);
 
 const path = join(
-  require.resolve("eslint-plugin-react-hooks-v5"),
+  require.resolve("@mo36924/eslint-plugin-react-hooks-v5"),
   "..",
   "cjs",
   "eslint-plugin-react-hooks.development.js",
